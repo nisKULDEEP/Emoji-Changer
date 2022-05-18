@@ -8,14 +8,14 @@ const inputRoute = require("./src/Routes/inputRoutes");
 
 const app = express();
 
-//Middleware
+//----------Middleware-----------------------
 app.use(express.json());
 app.use(cors());
 
-//Routes
+//-----------Routes--------------------------
 app.use("/input", inputRoute);
 
-//Server
+//-------------Database Connect----------------
 const db = process.env.DB_URL;
 
 mongoose.connect(db).then(() => {
@@ -24,6 +24,7 @@ mongoose.connect(db).then(() => {
 
 const PORT = process.env.PORT || 9999;
 
+//---------Server start running in local port-----
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
