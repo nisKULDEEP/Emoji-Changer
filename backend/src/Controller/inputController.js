@@ -10,7 +10,7 @@ const upload = async (req, res) => {
     });
   } catch (error) {
     res.status(500).json({
-      status: "error creating",
+      status: "error while creating",
     });
   }
 };
