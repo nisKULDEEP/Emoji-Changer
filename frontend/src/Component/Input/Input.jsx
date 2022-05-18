@@ -12,7 +12,7 @@ const Input = () => {
   const emojiBox = {
     "::smiley::": "😀",
     "::sad::": "😫",
-    "::smiley::": "😊",
+    "::happy::": "😊",
   };
 
   //handleChange function taking the input and changing it into emoji
