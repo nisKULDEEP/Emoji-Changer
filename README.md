@@ -12,3 +12,5 @@ eg. if user type "::smiley::", the text is automatically converted into 😊 emo
 
 Front-end : React
 Back-end: NodeJs, Express, Mongoose
+
+#END
